@@ -458,7 +458,15 @@ Config.MenuItems = {
                         shouldClose = false
                     }
                 }
-            }
+            },
+            {
+                id = 'carrepair',
+                title = 'Repair Car',
+                icon = 'wrench',
+                type = 'client',
+                event = 'frowmza-customs:client:repair',
+                shouldClose = true
+            },
         }
     },
 }
@@ -562,7 +570,15 @@ Config.JobInteractions = {
             type = 'client',
             event = 'qb-tow:client:TowVehicle',
             shouldClose = true
-        }
+        },
+        {
+            id = 'vehicleflip',
+            title = 'Flip Vehicle',
+            icon = 'car-crash',
+            type = 'client',
+            event = 'vehicle:flipit',
+            shouldClose = true
+        },
     },
     ["mechanic"] = {
         {
@@ -712,7 +728,7 @@ Config.JobInteractions = {
             event = 'qb-hotdogjob:client:ToggleSell',
             shouldClose = true
         }
-    }
+    },
 }
 
 Config.TrunkClasses = {
